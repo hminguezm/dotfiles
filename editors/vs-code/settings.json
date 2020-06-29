@@ -1,0 +1,57 @@
+{
+  // 👀 VS Code UI
+  "editor.cursorBlinking": "smooth",
+  "window.zoomLevel": -1,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": true,
+  // ⚙️ Common settings
+  "window.restoreWindows": "all",
+  "window.openFoldersInNewWindow": "on",
+  "window.openFilesInNewWindow": "off",
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "search.useGlobalIgnoreFiles": true,
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "Dockerfile-*": "dockerfile"
+  },
+  // ✍️ Editor
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 0,
+  "editor.rulers": [79],
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.tree.horizontalScrolling": true,
+  "files.trimTrailingWhitespace": true,
+  // ⬛ Terminal
+  "terminal.external.osxExec": "/usr/bin/zsh",
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
+  // 👨‍💻 Programming languages
+  "[markdown]": {
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.snippetSuggestions": "none",
+    "editor.formatOnSave": false
+  },
+  "workbench.colorCustomizations": {
+    "focusBorder": "#10fb7a"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "aws.profile": "profile:default"
+}

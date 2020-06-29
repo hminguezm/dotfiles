@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export DOTFILES_PATH="$HOME/.dotfiles"
+
+git --version
+
+git clone --depth 1 git@github.com:hminguezm/dotfiles.git "$DOTFILES_PATH"
+
+"$DOTFILES_PATH/bin/dot" self install
