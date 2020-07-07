@@ -1,0 +1,45 @@
+[global_config]
+  geometry_hinting = True
+  window_state = fullscreen
+  borderless = True
+  tab_position = bottom
+  scroll_tabbar = True
+  homogeneous_tabbar = False
+  title_hide_sizetext = True
+  inactive_color_offset = 0.8068181818181818
+  enabled_plugins = ActivityWatch, InactivityWatch, MavenPluginURLHandler, TerminalShot, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+  title_use_system_font = False
+  title_font = Fira Code Bold 9
+  putty_paste_style = True
+[keybindings]
+  close_term = <Primary>w
+  copy = <Primary>c
+  paste = <Primary>v
+  close_window = <Primary>q
+  next_tab = <Primary>Tab
+  prev_tab = <Primary><Shift>Tab
+[profiles]
+  [[default]]
+    icon_bell = False
+    cursor_shape = underline
+    cursor_color = "#aaaaaa"
+    font = Fira Code Bold 10
+    show_titlebar = False
+    scrollbar_position = hidden
+    scroll_on_keystroke = False
+    exit_action = hold
+    login_shell = True
+    custom_command = /usr/bin/zsh
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
