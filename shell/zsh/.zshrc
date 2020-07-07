@@ -19,7 +19,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
 
 source $DOTFILES_PATH/shell/init.zsh
-source $DOTFILES_PATH/shell/zsh/keybindings.zsh
 
 # -----------------------------
 # Post-init module configuration
