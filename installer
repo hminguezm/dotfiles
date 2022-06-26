@@ -1,9 +1,16 @@
 #!/bin/bash
 
 set -euo pipefail
-
 export DOTFILES_PATH="$HOME/.dotfiles"
 
-git --version
-git clone --depth 1 git@github.com:hminguezm/dotfiles.git "$DOTFILES_PATH"
+mkdir "$DOTFILES_PATH" 2>/dev/null && cp -R . "$DOTFILES_PATH"
 
+OSINFO=$(uname -s)
+
+if [ "$OSINFO" == "Darwin" ]; then
+  source os/macos/init.sh
+elif [ "$OSINFO" == "Linux" ]; then
+   source os/linux/init.sh
+else
+   echo "Cannot got the OS info"
+fi
